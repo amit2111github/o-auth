@@ -1,0 +1,16 @@
+const { configDotenv } = require("dotenv");
+
+configDotenv();
+
+const GOOGLE_OAUTH_URL = process.env.GOOGLE_OAUTH_URL;
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_CALLBACK_URL = process.env.GOOGLE_CALLBACK_URL;
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
+const GOOGLE_ACCESS_TOKEN_URL = process.env.GOOGLE_ACCESS_TOKEN_URL;
+module.exports = {
+  GOOGLE_OAUTH_URL,
+  GOOGLE_CLIENT_ID,
+  GOOGLE_CALLBACK_URL,
+  GOOGLE_CLIENT_SECRET,
+  GOOGLE_ACCESS_TOKEN_URL
+};
